@@ -36,13 +36,13 @@
 <body class="font-poppins">
     <header class="">
         <!-- nav section start -->
-        <nav class="w-11/12 mx-auto my-5 flex justify-between items-center">
+        <nav class="w-11/12 mx-auto sm:my-5 my-2 flex justify-between items-center">
             <div>
                 <a href="#">
                     <img src="./assets/logo.png" alt="" />
                 </a>
             </div>
-            <ul class="flex gap-5">
+            <ul class="sm:flex hidden gap-5">
                 <li>
                     <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
                         href="#">Home</a>
@@ -68,29 +68,30 @@
                         href="#">Corporate</a>
                 </li>
             </ul>
-            <div>
-                <i class="fa-solid fa-magnifying-glass text-primary me-8"></i>
+            <div class="flex items-center gap-5">
+                <i class="fa-solid fa-magnifying-glass text-primary me-8 sm:inline-block hidden"></i>
                 <button
-                    class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent border hover:border-primary hover:text-primary transition-colors duration-200 ease-in-out">
+                    class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent border hover:border-primary hover:text-primary transition-colors duration-200 ease-in-out sm:inline-block hidden">
                     iSERVICE
                 </button>
+                <i class="fa-solid fa-bars text-2xl sm:hidden"></i>
             </div>
         </nav>
         <!-- nav section end -->
         <!-- banner section start -->
         <section class="bg-[#ffeaf5]">
-            <div class="w-11/12 mx-auto flex justify-between items-center">
+            <div class="w-11/12 mx-auto flex sm:flex-row flex-col-reverse justify-between items-center">
                 <!-- left side content -->
-                <div>
-                    <h1 class="flex flex-col gap-1 text-6xl font-black">
+                <div class="sm:text-left text-center ">
+                    <h1 class="flex flex-col gap-1 lg:text-6xl md:text-5xl text-5xl font-black">
                         <span>Chase Your</span>
                         <span>Dream with us</span>
                     </h1>
-                    <p class="w-8/12 my-8">
+                    <p class="sm:w-8/12 w-full my-8">
                         The harder you work for something, the greater you’ll feel when
                         you achieve it.
                     </p>
-                    <div class="flex gap-5">
+                    <div class="flex sm:justify-start justify-center gap-5">
                         <button
                             class="bg-primary text-white py-3 px-5 font-semibold border hover:border-primary hover:text-primary hover:bg-transparent rounded transition-colors duration-200 ease-in-out">Apply
                             Now</button>
@@ -98,7 +99,8 @@
                             class="hover:bg-primary text-primary py-3 px-5 font-semibold border border-primary hover:text-white bg-transparent rounded transition-colors duration-200 ease-in-out">Loan
                             Calculator</button>
                     </div>
-                    <div class="flex items-center gap-3 mt-28 text-xl">
+                    <div
+                        class="flex sm:justify-start justify-center items-center gap-3 lg:mt-28 md:mt-16 mt-8 sm:mb-0 mb-8 text-xl">
                         <p>
                             <i class="fa-solid fa-phone text-primary"></i>
                             <span>16519</span>
