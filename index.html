@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank landing page with Tailwind css</title>
+    <!-- link google font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Link font-awesome CDN LINK -->
+    <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
+
+    <!-- Link custom css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ED017F',
+                    },
+                    fontFamily: {
+                        poppins: 'Poppins',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-poppins">
+    <header class="">
+        <!-- nav section start -->
+        <nav class="w-11/12 mx-auto my-5 flex justify-between items-center">
+            <div>
+                <a href="#">
+                    <img src="./assets/logo.png" alt="" />
+                </a>
+            </div>
+            <ul class="flex gap-5">
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Home</a>
+                </li>
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">About US</a>
+                </li>
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Services</a>
+                </li>
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Retails</a>
+                </li>
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">SME</a>
+                </li>
+                <li>
+                    <a class="text-lg font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Corporate</a>
+                </li>
+            </ul>
+            <div>
+                <i class="fa-solid fa-magnifying-glass text-primary me-8"></i>
+                <button
+                    class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent border hover:border-primary hover:text-primary transition-colors duration-200 ease-in-out">
+                    iSERVICE
+                </button>
+            </div>
+        </nav>
+        <!-- nav section end -->
+        <!-- banner section start -->
+        <section class="bg-[#ffeaf5]">
+            <div class="w-11/12 mx-auto flex justify-between items-center">
+                <!-- left side content -->
+                <div>
+                    <h1 class="flex flex-col gap-1 text-6xl font-black">
+                        <span>Chase Your</span>
+                        <span>Dream with us</span>
+                    </h1>
+                    <p class="w-8/12 my-8">
+                        The harder you work for something, the greater you’ll feel when
+                        you achieve it.
+                    </p>
+                    <div class="flex gap-5">
+                        <button
+                            class="bg-primary text-white py-3 px-5 font-semibold border hover:border-primary hover:text-primary hover:bg-transparent rounded transition-colors duration-200 ease-in-out">Apply
+                            Now</button>
+                        <button
+                            class="hover:bg-primary text-primary py-3 px-5 font-semibold border border-primary hover:text-white bg-transparent rounded transition-colors duration-200 ease-in-out">Loan
+                            Calculator</button>
+                    </div>
+                    <div class="flex items-center gap-3 mt-28 text-xl">
+                        <p>
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <span>16519</span>
+                        </p>
+                        <span class="text-gray-400">|</span>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-brands fa-facebook-f text-[#4B7FCD]"></i>
+                            <i class="fa-brands fa-youtube text-[#FF0000]"></i>
+                            <i class="fa-brands fa-linkedin text-[#4A71FB]"></i>
+                            <i class="fa-brands fa-instagram text-[#ED017F]"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side content -->
+                <div>
+                    <img src="./assets/hero-bg.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <!-- banner section  end -->
+    </header>
+
+    <main>
+        <!-- features section start-->
+        <section class="w-11/12 mx-auto my-10">
+            <!-- heading -->
+            <div class="text-center mb-20">
+                <h2 class="text-4xl text-[#343434] font-bold mb-5">Creating Extraordinary Customer Experience</h2>
+                <p class="w-1/2 mx-auto text-[#999999]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    bibendum eget
+                    morbi
+                    dignissim eu
+                    pharetra consequat
+                    montes, sagittis.</p>
+            </div>
+            <!-- cards -->
+            <div class="grid grid-cols-4 gap-10">
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+                <!-- card 01 -->
+                <div class="p-6">
+                    <img src="./assets/Cube.png" alt="">
+                    <h3 class="text-2xl font-bold py-5">Integrity</h3>
+                    <p class="w-2/3">Displaying the highest level of Integrity in the way we conduct our business</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
